@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  content: MyString
+  image_url: MyString
+  feels: MyString
+  date: MyString
+  is_professional?: MyString
+  stream: one
+
+two:
+  title: MyString
+  content: MyString
+  image_url: MyString
+  feels: MyString
+  date: MyString
+  is_professional?: MyString
+  stream: two

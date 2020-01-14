@@ -1,0 +1,31 @@
+// GET AND RENDER USERS
+// function getAndRenderUsers() {
+//   get(usersURL).then(usersList => usersList.forEach(renderUsers))
+// }
+// // RENDER USERS
+// function renderUsers(user) {
+//   const mainStream = document.getElementById("main-stream")
+//   let div = document.createElement("div")
+//   div.className = "flow"
+//   let username = document.createElement("p")
+//   username.innerText = user.username
+//   div.append(username)
+//   mainStream.append(div)
+// }
+
+
+// HANDLE ADD NEW ENTRY FORM
+function postEntry(event) {
+    event.preventDefault()
+  let dataObject = {
+    title: event.target[0].value,
+    content: event.target[1].value,
+  }
+  console.log(dataObject)
+  API.post(entriesURL, dataObject).then((newEntry) => {
+    // The line below clears the form inputs
+    // event.target.reset()
+    renderEntry(newEntry)
+  })
+
+}

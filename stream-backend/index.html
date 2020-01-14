@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stream</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  </head>
+  <body>
+    <header id="header">
+        <div id="nav bar">
+          <h2 style="text-align: center;">Stream</h2>
+          <p style="text-align: center;">
+          <!-- <button id="signInButton" class="submit">SIGN IN</button> -->
+          <!-- <button id="addEntryButton" class="submit">ADD A POST</button> -->
+        </p>
+    </div> 
+        <!-- SIGN-IN FORM -->
+        <div class="container">
+        <form class="signin-form" style="">
+          <input type="text" name="username" value="" placeholder="Username" class="input-text">
+          <input type="text" name="password" value="" placeholder="Password" class="input-text">
+          <br>
+          <input type="submit" name="submit" value="Sign In" class="submit">
+        </form>
+      </div>
+           <!--MAKE NEW ENTRY FORM  -->
+           <div class="newentrycontainer">
+            <form class="new-entry-form" style="">
+              <h3 style="text-align: center;">What's on your mind?</h3>
+              <input type="text" name="title" value="" placeholder="Title" class="input-text">
+              <input type="text" name="content" value="" placeholder="Content" class="input-text">
+              <h3 style="text-align: center;">How did this make you feel?</h3>
+                <select id="feels-select">
+                  <option value="neutral">- Please choose an option -</option>
+                  <option value="positive">Positive</option>
+                  <option value="neutral">Neutral</option>
+                  <option value="negative">Negative</option>
+                </select>
+          <br/>
+          <h3 style="text-align: center;">Is this about work or play?</h3>
+          <select id="context-select">
+            <option value="">- Please choose an option -</option>
+            <option value="false">Play</option>
+            <option value="true">Work</option>
+          </select>
+          <h3 style="text-align: center;">Add an image?</h3>
+          <input type="text" name="image" value="" placeholder="Paste IMG url here" class="input-text">
+              <br>
+              <input type="submit" name="submit" value="add entry" class="submit">
+            </form>
+          </div>
+    </header>
+
+    <main class="main">
+      <!-- Add Content Here -->  
+      <div id="main-stream"></div>
+      <div id="entry-stream"></div>
+      <a href="#header"><button class="fixed-button" >BACK TO TOP</button></a>
+    </main>
+
+    <script src="index.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script> -->
+  </body>
+</html>
